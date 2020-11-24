@@ -11,9 +11,14 @@ let mainWindow;
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    webPreferences: { backgroundThrottling: false },
+    webPreferences: { 
+      backgroundThrottling: false,
+      devTools: false
+    },
     show: false,
-    icon: path.join(__dirname,'public','images','favicon3.icns')
+    icon: path.join(__dirname,'public','images','favicon3.icns'),
+    minWidth:800,
+    minHeight:600,
   });
   mainWindow.loadURL(`http://localhost:4172`);
   mainWindow.maximize();

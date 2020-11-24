@@ -14,7 +14,7 @@
     "heroku-postbuild": "yarn run build:prod",
     "electron": "electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=public/images/favicon3.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=x64 --icon=public/images/favicon3.ico --prune=true --out=release-builds",    
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=x64 --icon=public/images/favicon3.ico --prune=true --out=release-builds",
     "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=public/images/favicon3.png --prune=true --out=release-builds"
   },
   "dependencies": {
@@ -54,7 +54,7 @@
   "devDependencies": {
     "cross-env": "5.0.5",
     "dotenv": "4.0.0",
-    "electron": "~1.6.2",
+    "electron": "^1.6.18",
     "electron-packager": "^12.0.2",
     "enzyme": "2.9.1",
     "enzyme-to-json": "1.5.1",
